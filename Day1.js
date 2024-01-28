@@ -1,28 +1,27 @@
-// datatypes : 
+// datatypes :
 
-// information 
-// name 
-// age 
-// number 
-// yes / no  boolean 
+// information
+// name
+// age
+// number
+// yes / no  boolean
 
-// String - "", '', `` 
+// String - "", '', ``
 // "true"
 //  'awdiz'
 //   `12345`
 
-// predefined function  - set of code 
+// predefined function  - set of code
 
-console.log("Awdiz")
-console.log(typeof("Pass@1234"))
-console.log('Awdiz')
-console.log(typeof('true'))
-console.log(`Awdiz`)
-console.log(typeof(`12.23`))
+// console.log("Awdiz")
+// console.log(typeof("Pass@1234"))
+// console.log('Awdiz')
+// console.log(typeof('true'))
+// console.log(`Awdiz`)
+// console.log(typeof(`12.23`))
 
 // console.log("ftyvbhj" , typeof(`iogyutfr`) , "87t6frtgvybu" ,"iuhygtfrd")
 // console.log(2 + 2)
-
 
 // console.log(1234 ,  typeof(1234))
 // console.log('1234', typeof('1234'))
@@ -30,26 +29,25 @@ console.log(typeof(`12.23`))
 // console.log(1 + 1)
 // console.log("1" + '1')
 
-// Boolean 
-// true , false 
+// Boolean
+// true , false
 
 // console.log(true, typeof (true))
 // console.log(false, typeof (false))
 // console.log('true', typeof ('true'))
 
-// Varibles 
-//  data store 
+// Varibles
+//  data store
 
-// var 
-// let 
-// const 
+// var
+// let
+// const
 
 // var instituteName = "Awdiz"
 // var age = 10
 // var isOpen = true
 
 // console.log(instituteName , age , isOpen)
-
 
 // var value1 = 10;
 // var value2 = 20;
@@ -59,42 +57,39 @@ console.log(typeof(`12.23`))
 // console.log(value1 * value2)
 // console.log(value1 / value2)
 
-
 // var kuchbhi = 12;
 // console.log(kuchbhi)
 // console.log(kuchbhi)
 // console.log(kuchbhi)
 // console.log(kuchbhi)
 
-
 // var myValue = 10;
 // console.log(myValue)
-// myValue = 20; // re-assign 
+// myValue = 20; // re-assign
 // console.log(myValue)
 // myValue = myValue + 10
 // console.log(myValue)
 // var myValue = 50; // re-declare
 // console.log(myValue)
 
-
 // const kuchbhi = 1234;
-// kuchbhi = 29 
+// kuchbhi = 29
 // const kuchbhi = 34567;
 // console.log(kuchbhi)
 
 // let kuchbhi = 1234;
-// kuchbhi = 2345; // re-assign 
+// kuchbhi = 2345; // re-assign
 // let kuchbhi = 3455;
 // console.log(kuchbhi)
 
 // var  - function scoped , hoisting is possible
-// re-assign and re-declare possible 
+// re-assign and re-declare possible
 // const  -  block scoped, hoisting is not possible
-// re-assign and re-declare not possible 
+// re-assign and re-declare not possible
 // let  - block scoped, hoisting is not possible
 // re-assign is possible and re-declare is not possible
 
-// hoisting  js behavior 
+// hoisting  js behavior
 
 // myname = 'awdiz'; // assigning
 
@@ -107,3 +102,7 @@ console.log(typeof(`12.23`))
 // console.log(myname)
 
 // const , let myname ;
+
+name = "Awdiz";
+var name;
+console.log(name);
