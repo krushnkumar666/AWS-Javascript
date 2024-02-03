@@ -43,25 +43,25 @@
 // let
 // const
 
-// var instituteName = "Awdiz"
-// var age = 10
-// var isOpen = true
+var instituteName = "Awdiz"
+var age = 10
+var isOpen = true
 
-// console.log(instituteName , age , isOpen)
+console.log(instituteName , age , isOpen)
 
-// var value1 = 10;
-// var value2 = 20;
+var value1 = 10;
+var value2 = 20;
 
-// console.log(value1 + value2)
-// console.log(value1 - value2)
-// console.log(value1 * value2)
-// console.log(value1 / value2)
+console.log(value1 + value2)
+console.log(value1 - value2)
+console.log(value1 * value2)
+console.log(value1 / value2)
 
-// var kuchbhi = 12;
-// console.log(kuchbhi)
-// console.log(kuchbhi)
-// console.log(kuchbhi)
-// console.log(kuchbhi)
+var kuchbhi = 12;
+console.log(kuchbhi)
+console.log(kuchbhi)
+console.log(kuchbhi)
+console.log(kuchbhi)
 
 // var myValue = 10;
 // console.log(myValue)
