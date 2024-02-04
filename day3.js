@@ -68,3 +68,4 @@ if (age>18 && age<80){
 
 // || -  if even one condition is true then it'll return true
 //         and when all conditions are false then only it'll return false
+
