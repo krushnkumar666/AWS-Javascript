@@ -1,13 +1,30 @@
 // Find the unique numbers 
 // var array = [1, 2, 1, 3, 4, 5, 2, 3, 5];
-// var unique = [];
+// var unique = {};
 // for (var i = 0; i < array.length; i++) {
 //     if (unique[array[i]] === undefined) {
 //         unique[array[i]] = 1;
-//         console.log(array[i]);
+//     }else{
+//         unique[array[i]]++;
 //     }
 // }
-  
+// console.log(unique);
+
+var array = [1, 2, 1, 3, 4, 5, 2, 3, 5];
+var counter = {};
+for (var i = 0; i < array.length; i++) {
+    var currentDigit = array[i].toString();
+
+    for (var j = 0; j < currentDigit.length; j++) {
+        var digit = parseInt(currentDigit[j]);
+        if (counter[digit] === undefined) {
+            counter[digit] = 1;
+        } else {
+            counter[digit]++;
+        }
+    }
+}
+console.log(counter);
 
 
 // var obj = {
