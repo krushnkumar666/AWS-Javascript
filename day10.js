@@ -66,13 +66,16 @@
 const array = ["a", "b", "c", "d", "e"];
 // array.splice(index, 0/1, value )
 
-array.splice(1, 0, "z");
-console.log(array);
+// array.splice(1, 0, "z");
+// console.log(array);
 
-array.splice(4, 1, "x");
-console.log(array);
+// array.splice(4, 1, "x");
+// console.log(array);
 
-var todos = ["comple assignmentts", "eat lunch"];
+// var todos = ["comple assignmentts", "eat lunch"];
 
-todos.splice(1, 2);
-console.log(todos);
+// todos.splice(1, 2);
+// console.log(todos);
+a=[1,2,3]
+console.log(a.map((i)=>{return i*2}))
+console.log(array)

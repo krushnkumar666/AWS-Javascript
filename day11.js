@@ -21,7 +21,7 @@
 
 
 // we are taking it from frontend, <input type="text" />
-var name = "Awdiz";
+// var name = "Awdiz";
 // var age = 10;
 
 
@@ -54,21 +54,27 @@ var name = "Awdiz";
 // var numbers = [1, 5, 200, 3, 2, 4]
 // console.log(numbers.sort((a, b) => a - b))
 // console.log(numbers.sort((a, b) => b - a))
+// let num = parseFloat(numbers);
+// console.log(numbers.sort())
 
-var data = ["abc", "xyz", 'lmn']
+// var num = function (x,y){
+//     return y-x;
+// }
+// console.log(numbers.sort(num));
 
-console.log(data.join("-"))
-console.log(data.join(" "))
-console.log(data.join(""))
-console.log(data.join())
+// var data = ["abc", "xyz", 'lmn']
+
+// console.log(data.join("-"))
+// console.log(data.join(" "))
+// console.log(data.join(""))
+// console.log(data.join())
 
 
-var string = "Awdiz Institute Vashi"
-console.log(string.split(" "))
+// var string = "Awdiz Institute Vashi"
+// console.log(string.split(" "))
 
 
-
-var nums = [1, 2, 3, 4]
-console.log(nums.at(0))
-console.log(nums.at(3))
-console.log(nums.at(4))
+// var nums = [1, 2, 3, 4]
+// console.log(nums.at(0))
+// console.log(nums.at(3))
+// console.log(nums.at(4))

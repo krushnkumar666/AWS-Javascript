@@ -99,9 +99,9 @@
 // console.log(result)
 
 
-// var array = [1, 6, 8, 2, 3, 4, 5, 6]
-// array.forEach((number) => {
-//     if (number > 5) {
-//         console.log(number)
-//     }
-// })
+var array = [1, 6, 8, 2, 3, 4, 5, 6]
+array.forEach((number) => {
+    if (number > 5) {
+        console.log(number)
+    }
+})

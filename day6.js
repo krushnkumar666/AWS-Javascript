@@ -189,26 +189,25 @@
 // console.log(FindTargetedValues(array, target));
 
 var array = [1, 2, 4, 56, 7, 8, 3, 2, 5, 7];
-var target = 12;
+// var target = 12;
 
-function FindTargetedValues(array, target) {
-  let result = new Set();
+// function FindTargetedValues(array, target) {
+//   let result = new Set();
 
-  for (var i = 0; i < array.length - 1; i++) {
-    for (var j = i + 1; j < array.length; j++) {
-      if (array[i] + array[j] === target) {
-        result.add([array[i], array[j]]);
-        result.add([array[j], array[i]]);
-      }
-    }
-  }
-  return Array.from(result);
-}
-console.log(FindTargetedValues(array, target));
+//   for (var i = 0; i < array.length - 1; i++) {
+//     for (var j = i + 1; j < array.length; j++) {
+//       if (array[i] + array[j] === target) {
+//         result.add([array[i], array[j]]);
+//         result.add([array[j], array[i]]);
+//       }
+//     }
+//   }
+//   return Array.from(result);
+// }
+// console.log(FindTargetedValues(array, target));
 
-
-
-
+// var u = new Set(array);
+// console.log(Array.from(u));
 
 
 

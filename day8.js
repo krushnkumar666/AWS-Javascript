@@ -1,15 +1,15 @@
 // Find the unique numbers 
-// var array = [1, 2, 1, 3, 4, 5, 2, 3, 5];
-// var unique = {};
-// for (var i = 0; i < array.length; i++) {
-//     if (unique[array[i]] === undefined) {
-//         unique[array[i]] = 1;
-//     }else{
-//         unique[array[i]]++;
-//     }
-// }
+var array = [1, 2, 1, 3, 4, 5, 2, 3, 5];
+var unique = {};
+for (var i = 0; i < array.length; i++) {
+    if (unique[array[i]] === undefined) {
+        unique[array[i]] = 1;
+    }else{
+        unique[array[i]]++;
+    }
+}
 // console.log(unique);
-
+// counter 
 var array = [1, 2, 1, 3, 4, 5, 2, 3, 5];
 var counter = {};
 for (var i = 0; i < array.length; i++) {
@@ -34,19 +34,22 @@ console.log(counter);
 // }
 // console.log(obj.age);
 
-var array = [1, 2, 1, 3, 4, 5, 2, 3, 5];
-var unique = [];
+// var array = [1, 2, 1, 3, 4, 5, 2, 3, 5];
+// var unique = [];
 
-function isPrime(n){
-    for (var i=2; i<=n; i++){
-        if(n%i===0){
-            return false
-        }
-        return n>1
-    }
-}
-for (var j=0; j<array.length;j++){
-    if(unique[array[j]]===undefined && (unique[array[j]]=1) && (isPrime(array[j]))){
-        console.log(array[j])
-    }
-}
+// function isPrime(n){
+//     for (var i=2; i<=n; i++){
+//         if(n%i===0){
+//             return false
+//         }
+//         return n>1
+//     }
+// }
+// for (var j=0; j<array.length;j++){
+//     if(unique[array[j]]===undefined && (unique[array[j]]=1) && (isPrime(array[j]))){
+//         console.log(array[j])
+//     }
+
+var numbers = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 9, 1];
+var unique = new Set(numbers);
+console.log(Array.from(unique));

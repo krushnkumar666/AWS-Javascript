@@ -20,28 +20,28 @@
 
 // console.log("1")
 
-function login() {
-    console.log("Hi from function")
-}
-login();
+// function login() {
+//     console.log("Hi from function")
+// }
+// login();
 
 
 
 // Q Find addition of odd numbers from given Range. 
 
-function addition(value1, value2) {
-    var count = 0;
-    for (var i = value1; i <= value2; i++) {
-        if (i % 2 == 1) {
-            count += i
-        }
-    }
+// function addition(value1, value2) {
+//     var count = 0;
+//     for (var i = value1; i <= value2; i++) {
+//         if (i % 2 == 1) {
+//             count += i
+//         }
+//     }
     // console.log(count)
-    return count;
-}
+//     return count;
+// }
 
-const answer = addition(34, 38);
-console.log(answer)
+// const answer = addition(34, 38);
+// console.log(answer)
 
 
 
@@ -50,23 +50,23 @@ console.log(answer)
 
 
 
-function Fact(value) {
-    if (value <= 0) {
-        return 1;
-    }
-    var ans
-    for (var i = 1; i <= value; i++) {
-        if (ans == undefined) {
-            ans = i
-        } else {
-            ans *= i
-        }
-    }
-    return ans;
-}
+// function Fact(value) {
+//     if (value <= 0) {
+//         return 1;
+//     }
+//     var ans
+//     for (var i = 1; i <= value; i++) {
+//         if (ans == undefined) {
+//             ans = i
+//         } else {
+//             ans *= i
+//         }
+//     }
+//     return ans;
+// }
 
-var result = Fact(0)
-console.log(result, "result")
+// var result = Fact(0)
+// console.log(result, "result")
 
 
 
@@ -75,36 +75,36 @@ console.log(result, "result")
 
 // var myname = "awdiz"
 
-var studentss = ["atharvb", "anchal", "kurshna", 12, true, myname, [1, 2, 3, true, "hi"]]
+// var studentss = ["atharvb", "anchal", "kurshna", 12, true, myname, [1, 2, 3, true, "hi"]]
 
-console.log(studentss, "students")
+// console.log(studentss, "students")
 
-var students = ['virat', "rohit", "rahul"];
+// var students = ['virat', "rohit", "rahul"];
 
-console.log(students.length)
-console.log(students[2])
-console.log(students[students.length - 1])
-console.log(students, "students")
-students.push("awdiz")
-console.log(students, "students")
-
-
-for (var i = 0; i < students.length; i++) {
-    if (students[i] == "rohit") {
-        console.log(i + 1)
-    }
-}
+// console.log(students.length)
+// console.log(students[2])
+// console.log(students[students.length - 1])
+// console.log(students, "students")
+// students.push("awdiz")
+// console.log(students, "students")
 
 
+// for (var i = 0; i < students.length; i++) {
+//     if (students[i] == "rohit") {
+//         console.log(i + 1)
+//     }
+// }
 
-var myname ;
-if(myname == undefined){
-    myname = "awdiz"
-    console.log(myname)
-} else {
-    console.log("Myname is defied.")
-}
-console.log(myname, typeof(myname))
+
+
+// var myname ;
+// if(myname == undefined){
+//     myname = "awdiz"
+//     console.log(myname)
+// } else {
+//     console.log("Myname is defied.")
+// }
+// console.log(myname, typeof(myname))
 
 
 
@@ -113,3 +113,12 @@ console.log(myname, typeof(myname))
 //     for (var j = 0; j < 10; j++) {
 //     }
 // }
+
+function fact(n){
+    if (n==0 || n==1){
+        return 1;
+    }else{
+        return  n * fact(n-1);
+    }
+}
+console.log(fact(5), 'fact')

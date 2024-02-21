@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <h3>Counter :</h3>
+    <h1 id="Counter">0</h1>
+    <button onclick="increment()">+</button>
+    <button onclick="decrement()">-</button>
+
+    <script>
+      var Counter = parseInt(document.getElementById("Counter").innerText, 10);
+
+      function increment() {
+        Counter++;
+        document.getElementById("Counter").innerHTML = Counter;
+      }
+
+      function decrement() {
+        Counter--;
+        document.getElementById("Counter").innerHTML = Counter;
+      }
+    </script>
+  </body>
+</html>

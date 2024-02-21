@@ -32,10 +32,23 @@
 
 
 // palindrome
-var a = "abbca";
-b = a.split('').reverse().join('');
-if (a==b){
-    console.log("It's Palindrome");
-}else{
-    console.log("Not Palindrome")
+// var a = "abbca";
+// b = a.split('').reverse().join('');
+// if (a==b){
+//     console.log("It's Palindrome");
+// }else{
+//     console.log("Not Palindrome")
+// }
+function Details(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+
+    this.checkAge = function (customAge = 20) {
+        return customAge > 20 ? customAge : `Age must be greater than ${customAge}`;
+    };
 }
+
+const me = new Details("John", "Doe", 34);
+console.log(me.checkAge());
+
