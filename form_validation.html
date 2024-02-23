@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form onsubmit="registerUser(event)">
+        <label for="">Name</label><br>
+        <input type="text" id="name" required><br>
+        <label for="">email</label><br>
+        <input type="email" id="email" required><br>
+        <label for="">Password</label><br>
+        <input type="password" id="password" required><br>
+        <label for="">Confirm Password</label><br>
+        <input type="password" id="confirmPassword"><br><br>
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        function registerUser(event){
+            event.preventDefault();
+            const fields = ['name','email','password','confirmPassword'];
+            const values = fields.map(id => document.getElementById(id).value);
+            // blank validation
+            if(values.some(value => !values)) return alert("All fields are required!");
+            // password validation
+            const [name, email, password, confirmPassword] = values;
+            if(password !== confirmPassword) return alert("passowrd and confirm password do not mathch");
+            // Email Validation
+            const userList = JSON.parse(localStorage.getItem('users')) || [];
+            if(userList.some(user => user.email === email)) return alert("Email already exists");
+            // New User
+            userList.push({name,email,password});
+            localStorage.setItem("users",JSON.stringify(userList));
+            // fileds blank
+            fields.forEach(id => document.getElementById(id).value = "");
+
+            alert("Registration successfull!");
+            window.location.href = '/.login.html'
+
+        }
+    </script>
+</body>
+</html>
