@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <h1>Register :</h1>
     <form onsubmit="Register(event)">
         <label>Name : </label><br />
@@ -20,7 +21,6 @@
         <input required id="confirmPassword" type="password" /><br />
         <input type="submit" value="Register" />
     </form>
-
 </body>
 
 <script>
@@ -35,8 +35,6 @@
         }
         return false;
     }
-
-
     function Register(event) {
         event.preventDefault();
         const name = document.getElementById("name").value;

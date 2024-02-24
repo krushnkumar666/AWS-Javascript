@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login :</h1>
+    <form onsubmit="loginUser(event)">
+      <label for="">Email</label><br />
+      <input type="email" id="loginEmail" required /><br />
+      <label for="">Password</label><br />
+      <input type="password" id="loginPassword" required /><br /><br />
+      <input type="submit" value="Login" /><br />
+    </form>
+
+    <script>
+        function loginUser(event){
+            event.preventDefault();
+            const email = document.getElementById("loginEmail").value;
+            const password =  document.getElementById("loginPassword").value;
+            //blank  check
+            if(!email || !password){
+                return alert("Email and Password are required.");
+            }
+            // storage access
+            const userList = JSON.parse(localStorage.getItem("users")) || [];
+            const user = userList.find(u => u.email === email && u.password === password);
+            
+            if(user){
+                alert ("Logged in Successfully");
+            }else{
+                alert ("Wrong Email or Password");
+            }
+            //clear storage
+            document.getElementById("loginEmail").value ="";
+            document.getElementById("loginPassword").value ="";
+        }
+    </script>
+  </body>
+</html>
